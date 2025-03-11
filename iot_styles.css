@@ -1,0 +1,134 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #f0db4f;
+}
+
+/* Project Sections */
+section {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Images */
+.images-gallery img {
+    width: 120px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.images-gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Team Members */
+.team-list {
+    list-style: none;
+    padding: 0;
+}
+
+.team-list li {
+    font-size: 1.2rem;
+    padding: 8px 0;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: #222;
+    font-size: 0.9rem;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background: #ff416c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #ff4b2b;
+}
+
+/* Logos */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.logo-item {
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.5));
+}
+
+.logo-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.logo-item:hover {
+    transform: scale(1.1);
+}

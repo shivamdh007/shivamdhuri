@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Dhuri - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.14.0/devicon.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link href="http://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Secular+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="fade-in"> 
+            <div class="logo-container">
+                <img id="skill" class="shivam" src="logo.webp" alt="SD Logo">
+                <h2   class="heading">SHIVAM DHURI</h2>
+                
+            </div>
+        <button class="menu-toggle">&#9776;</button> <!-- Hamburger Icon -->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#qualifications">Qualifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav> 
+    </header>
+   
+
+    
+    
+
+    <section id="about" class="about">
+        
+            <div class="about-content">
+                <div class="profile-container">
+                    <img  src="IMG20241020133744 (1) (3).jpg" alt="Profile" class="profile-image">
+                </div>
+                <h2>About Me</h2>
+                <div class="typing-container">
+                    <span id="dynamic-text"></span>
+                </div>
+                <p id="about-description">
+                    I'm <strong>Shivam Dhuri</strong>, a passionate WEB DEVELOPER, MUSICIAN, ATHELETE, who loves creating interactive and modern websites.
+                    <ul class="about-list">
+                        <li><i class="fa-solid fa-laptop-code"></i> 💻 Skilled in C, JavaScript, HTML, CSS, JavaScript, PHP</li>
+                        <li><i class="fa-solid fa-brain"></i> 🌍 Exploring <strong>IoT & Generative AI</strong></li>
+                        <li><i class="fa-solid fa-bolt"></i> 🚀 Love <strong>problem-solving & building projects</strong></li>
+                        <li><i class="fa-solid fa-music"></i> 🎵 Passionate about <strong>Music & Live Performances</strong></li>
+                    </ul>
+                    
+                    
+            </section>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var profileImage = document.getElementById("profile-image");
+        var aboutText = document.getElementById("about-description");
+    
+        var roles = [
+            { 
+                title: '<i class="fa-solid fa-code"></i> Web Developer', 
+                img: 'IMG20241020133744 (1) (3).jpg',
+                text: "I'm Shivam Dhuri, a passionate **web developer** who loves creating interactive and modern websites."
+            },
+            { 
+                title: '<i class="fa-solid fa-dumbbell"></i> Athlete', 
+                img: 'achieve.jpg',
+                text: "Sports fuel my energy and discipline. As an **athlete**, I thrive on pushing my limits and staying fit."
+            },
+            { 
+                title: '<i class="fa-solid fa-music"></i> Musician', 
+                img: 'musician.jpg',
+                text: "Music is my creative escape. As a **musician**, I love playing and creating soulful melodies."
+            }
+        ];
+    
+        var typed = new Typed("#dynamic-text", {
+            strings: roles.map(role => role.title),
+            typeSpeed: 100,
+            backSpeed: 60,
+            startDelay: 400,
+            loop: true,
+            smartBackspace: true,
+            showCursor: false,
+            preStringTyped: (index) => {
+                profileImage.style.opacity = "0";
+                aboutText.style.opacity = "0";
+                setTimeout(() => {
+                    profileImage.src = roles[index].img;
+                    aboutText.innerHTML = roles[index].text;
+                    profileImage.style.opacity = "1";
+                    aboutText.style.opacity = "1";
+                }, 500);
+            }
+        });
+    </script>
+    
+
+
+    <section id="skills" class="skills">
+        
+        <div class="skills-container">
+            <h2  class="skil">Skills:</h2>
+            <div class="skill">
+                <i class="devicon-html5-plain colored"></i>
+                <i class="devicon-css3-plain colored"></i> <!-- HTML & CSS Icons -->
+                <div class="skill-name">HTML & CSS</div>
+                <div class="skill-bar"><div class="skill-level html-css-skill">90%</div></div>
+            </div>
+            <div class="skill">
+                <i class="devicon-php-plain colored"></i> <!-- PHP Icon -->
+                <div class="skill-name">PHP</div>
+                <div class="skill-bar"><div class="skill-level php-skill">80%</div></div>
+            </div>
+            <div class="skill">
+                <i class="devicon-javascript-plain colored"></i> <!-- JavaScript Icon -->
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-bar"><div class="skill-level js-skill">85%</div></div>
+            </div>
+            <div class="skill">
+                <i class="fas fa-brain"></i> <!-- AI Icon -->
+                <div class="skill-name">Generative AI</div>
+                <div class="skill-bar"><div class="skill-level ai-skill">60%</div></div>
+            </div>
+            <div class="skill">
+                <i class="devicon-c-plain colored"></i> <!-- C Icon -->
+                <div class="skill-name">C Programming</div>
+                <div class="skill-bar"><div class="skill-level c-skill">85%</div></div>
+            </div>
+            
+        </div>
+    </section>
+    
+    
+
+    <section id="projects">
+        <h2 >Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Smart Home Automation</h3>
+                <a href="iot_project.html" class="btn">View Project</a>
+            </div>
+            
+            <div class="project">
+                <h3>Starbucks Clone Front Page</h3>
+                <a href="https://star1-phi.vercel.app/" class="btn">View Project</a>
+            </div>
+    
+            <div class="project">
+                <h3>Amazon Front Page</h3>
+                <a href="https://amazon-nu-drab.vercel.app/" class="btn">View Project</a>
+            </div>
+    
+            <div class="project">
+                <h3>Flipkart Front Page</h3>
+                <a href="https://flipkart-flax.vercel.app/" class="btn">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Weather App</h3>
+                <a href="https://weatherapp-wheat-sigma.vercel.app/" class="btn">View Project</a>
+            </div>
+            <div class="project">
+                <h3>TO DO LIST</h3>
+                <a href="https://todo-dusky-mu.vercel.app/" class="btn">View Project</a>
+            </div>
+            <div class="project">
+                <h3>CLOCK</h3>
+                <a href="https://clock-eta-red.vercel.app/" class="btn">View Project</a>
+            </div>
+            <div class="project">
+                <h3>QR CODE GENERATOT</h3>
+                <a href="https://qr-lake-omega.vercel.app/" class="btn">View Project</a>
+            </div>
+            <div class="project">
+                <h3>QUIZ APP</h3>
+                <a href="https://quiz-nu-kohl.vercel.app/" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="qualifications" class="qualifications">
+        <h2 id="proj">Qualifications:</h2>
+        
+        <div class="qualification-image">
+            <img src="achieve.jpg" alt="achieve1">
+            <img src="achieve2.jpg" alt="achieve2">
+            <img src="achieve3.jpg" alt="achieve3">
+        </div>
+        
+        
+            <p id="prop" class="boxx">Check out my academic journey and certifications <a href="qualifications.html" class="btn">here</a></p>
+        </div>
+    </section>
+    <section class="projects-container">
+        <h2 id="proj">Download My Resume
+            :
+        </h2>
+        <p id="pro" class="boxx"><a href="Shivam_Resume.pdf" download class="btn">Download Resume</a></p>
+        
+    </section>
+
+<script>
+  document.getElementById("resumeDownload").addEventListener("click", function (event) {
+    event.preventDefault();
+    const link = document.createElement("a");
+    link.href = "files/Shivam_Resume.pdf";
+    link.setAttribute("download", "Shivam_Resume.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+</script>
+
+    
+
+    <section id="contact">
+
+        <div class="reach1">
+            <div class=""> <h2 class="reach">REACH OUT</h2></div>
+            
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/shivam-dhuri-a735862b6/" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://www.instagram.com/_shivam_2923/" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+                <a href="https://x.com/ShivamG55039298" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-x-twitter"></i> X (Twitter)
+                </a>
+                <a href="https://github.com/shivamdh007" target="_blank" class="social-icon">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+            </div>
+        <form action="contact.php" method="POST">
+            <label for="name" id="proj">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email" id="proj">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message" id="proj">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Shivam Dhuri. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
