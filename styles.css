@@ -153,8 +153,8 @@ header h1:hover {
 }
 
 
-.about-section {
-    font-size: 1.8rem; /* Enlarged text */
+.about{
+    font-size: 1.2rem; /* Enlarged text */
     font-weight: bold;
     line-height: 1.5;
     text-align: left;
@@ -165,6 +165,7 @@ header h1:hover {
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+   
 }
 /* About List Styling */
 .about-list {
@@ -196,9 +197,9 @@ header h1:hover {
     color: #333;
 }
 #about-description {
-    font-size: 1.2em;
+    font-size: 1em;
     max-width: 800px;
-    line-height: 1.6;
+    line-height: 1.2;
     margin-top: 10px;
 }
 .about-container {
@@ -221,7 +222,7 @@ header h1:hover {
 
 
 .skills-container {
-    padding-top:70px ;
+    padding-top:100px ;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -596,19 +597,8 @@ body.dark-mode .project {
     transform: scale(1.05); 
 }
 
-.testimonials {
-    background: #fbfbfb; 
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
 
-.testimonial {
-    margin: 15px 0;
-    font-style: italic;
-    text-align: center;
-}
+
 #prop{
     color: white;
     margin-left: 60%;
@@ -677,13 +667,7 @@ h2 {
 #skill{
     color: #fbfbfb;
 }
-#proj{
-    color:rgb(0, 0, 0);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-}
+
 #pro{
     color: white;
 }
